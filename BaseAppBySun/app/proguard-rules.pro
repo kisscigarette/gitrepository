@@ -2,6 +2,7 @@
 #-ignorewarnings -keep class * { public private *; }
 #-------------------------------------------定制化区域----------------------------------------------
 #---------------------------------1.实体类---------------------------------
+-keep class com.kisscigarette.app.httpFrame.entity.** {*;}
 
 
 
@@ -19,8 +20,50 @@
     @butterknife.* <methods>;
 }
 
+# retrofit2.4.
+-keepclassmembers,allowshrinking,allowobfuscation interface * {
+    @retrofit2.http.* <methods>;
+}
+-dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+-keep class retrofit2.** { *; }
+-dontwarn retrofit2.**
+-keepattributes Exceptions
+-dontwarn okio.**
+-dontwarn javax.annotation.**
 
+#okhttp3.0
+-keepnames class okhttp3.internal.publicsuffix.PublicSuffixDatabase
+-dontwarn org.codehaus.mojo.animal_sniffer.*
+-dontwarn okhttp3.internal.platform.ConscryptPlatform
+-dontwarn okhttp3.**
 
+# RxJava RxAndroid
+-dontwarn sun.misc.**
+-keepclassmembers class rx.internal.util.unsafe.*ArrayQueue*Field* {
+    long producerIndex;
+    long consumerIndex;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueProducerNodeRef {
+    rx.internal.util.atomic.LinkedQueueNode producerNode;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueConsumerNodeRef {
+    rx.internal.util.atomic.LinkedQueueNode consumerNode;
+}
+-dontnote rx.internal.util.PlatformDependent
+
+# Gson
+-keep class com.google.gson.** { *; }
+-keepattributes EnclosingMethod
+
+# EventBus
+-keepclassmembers class ** {
+    @org.greenrobot.eventbus.Subscribe <methods>;
+}
+-keep enum org.greenrobot.eventbus.ThreadMode { *; }
+
+# FastJson
+-dontwarn com.alibaba.fastjson.**
+-keep class com.alibaba.fastjson.** { *; }
 
 
 #-------------------------------------------------------------------------

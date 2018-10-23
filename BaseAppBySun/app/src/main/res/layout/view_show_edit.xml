@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/img_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/icon_user_grey" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/cb_show_pass"
+        android:layout_toRightOf="@+id/img_header"
+        android:background="@color/transparent"
+        android:textCursorDrawable="@null"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/text_color_gray"
+        android:textColorHint="@color/text_color_hint"
+        android:textSize="@dimen/text_size_16"/>
+
+    <CheckBox
+        android:id="@+id/cb_show_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:padding="5dp"
+        android:button="@drawable/bg_check_eye" />
+    <ImageView
+        android:id="@+id/img_tail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:src="@drawable/check_delete" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:text="1111"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16" />
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!---->
+    <!--android:src="@mipmap/icon_next" />-->
+
+
+    <com.kyleduo.switchbutton.SwitchButton xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/switch_lower_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:checked="true"
+        android:paddingBottom="4dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="4dp"
+        app:kswAnimationDuration="300"
+        app:kswBackDrawable="@drawable/ios_back_drawable"
+        app:kswThumbDrawable="@drawable/ios_thumb_selector"
+        app:kswThumbMarginBottom="-8dp"
+        app:kswThumbMarginLeft="-5dp"
+        app:kswThumbMarginRight="-5dp"
+        app:kswThumbMarginTop="-2.5dp"
+        app:kswThumbRangeRatio="1.4" />
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/lay_toolbar"
+        layout="@layout/layout_toolbar"></include>
+    <View
+        android:id="@+id/toolbar_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mar1"
+        android:background="@color/gray_light" />
+
+    <WebView
+        android:id="@+id/wv_policy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

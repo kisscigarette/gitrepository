@@ -15,8 +15,8 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
         MyApplication.instance = this;
+
 
 
     }
@@ -29,6 +29,8 @@ public class MyApplication extends Application {
             throw new RuntimeException("u should init instance first");
         }
     }
+
+
 
 
 

@@ -1,3 +1,20 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size_11">11sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_21">21sp</dimen>
+
+    <dimen name="mar1">1dp</dimen>
+    <dimen name="mar5">5dp</dimen>
+    <dimen name="mar8">8dp</dimen>
+    <dimen name="mar10">10dp</dimen>
+    <dimen name="mar12">12dp</dimen>
+    <dimen name="mar20">20dp</dimen>
+    <dimen name="mar50">50dp</dimen>
+    <dimen name="mar60">60dp</dimen>
+
 </resources>

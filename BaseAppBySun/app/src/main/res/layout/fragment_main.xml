@@ -5,24 +5,62 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:orientation="vertical"
-    android:layout_height="match_parent"
-  >
+    android:layout_height="match_parent">
 
     <TextView
+        android:letterSpacing="0.3"
+        android:textSize="12sp"
         android:id="@+id/texttest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="获取cookis,模拟抓包篡改请求数据"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+        android:letterSpacing="0.3"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/texttest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="银联支付功能"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/texttest3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模拟账号在另一设备上登录"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:textColor="@color/white"
         android:layout_marginTop="50dp"
         android:id="@+id/buttontest"
         android:background="@color/colorPrimary"
-        android:text="点击"
+        android:text="模拟操作"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:textColor="@color/white"
+        android:layout_marginTop="50dp"
+        android:id="@+id/buttontest2"
+        android:background="@color/colorPrimary"
+        android:text="跳转测试"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

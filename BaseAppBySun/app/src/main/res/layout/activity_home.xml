@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:background="@color/transparent"
+        android:id="@+id/homeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dip">
+    </FrameLayout>
+
+    <!--<View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dip"
+        android:background="#ffffff" />-->
+
+
+    <LinearLayout
+        android:id="@+id/home_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:id="@+id/llrent"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_rent_selector" />
+
+            <TextView
+                android:id="@+id/tvrent"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首  页"
+                android:textColor="@drawable/tab_text_selector"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llanalyse"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivanalyse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_analysis_selector" />
+
+            <TextView
+                android:id="@+id/tvanalyse"
+               android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分  析"
+                android:textColor="@drawable/tab_text_selector"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="3dp"
+            android:id="@+id/rl_click"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/tab_add_shape" />
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/add" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llmessage"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivmessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_message_selector" />
+
+            <TextView
+                android:id="@+id/tvmessage"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="消  息"
+                android:textColor="@drawable/tab_text_selector"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llperson"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivperson"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_person_selector" />
+
+            <TextView
+                android:id="@+id/tvperson"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我  的"
+                android:textColor="@drawable/tab_text_selector"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

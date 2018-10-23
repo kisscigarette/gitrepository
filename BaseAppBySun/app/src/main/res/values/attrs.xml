@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--账号或密码EditText-->
+    <declare-styleable name="WholeEditText">
+        <attr name="header" format="reference" />
+        <attr name="headerFocus" format="reference" />
+        <attr name="tail" format="reference" />
+        <attr name="editType" format="string" />
+        <attr name="hint" format="string" />
+
+    </declare-styleable>
+    <!--登录Button-->
+    <declare-styleable name="LoginButton">
+        <attr name="buttontext2" format="reference|string" />
+    </declare-styleable>
+
+    <!--获取验证码Button-->
+    <declare-styleable name="VerifyButton">
+        <attr name="buttontext" format="reference|string" />
+    </declare-styleable>
+
+
+</resources>

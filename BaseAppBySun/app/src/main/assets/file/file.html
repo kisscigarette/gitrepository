@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>操作手册预览</title>
+		<link rel="stylesheet" href="file.css">
+	</head>
+
+	<body>
+		<h1 class="title">综合能源管控操作手册</h1>
+		<h2 class="title1"><strong>App常见问题列举</strong></h2>
+		<h2 class="title2">1
+			<span class="font1">、一个</span>
+			<span class="font2">".java"</span>
+			<span class="font1">源文件中是否可以包括多个类（不是内部类）？有什么限制？&nbsp;</span>
+		</h2>
+		<p class="main">　　
+			<span class="color">
+			<strong>可以有多个类，但只能有一个<span class="font2">public</span>
+			<span class="font1">的类，并且</span>
+			<span class="font2">public</span>
+			<span class="font1">的类名必须与文件名相一致。</span>
+			</strong>
+			</span>
+		</p>
+		<h2 class="title2">2
+			<span class="font1">、</span>
+			<span class="font2">Java</span>
+			<span class="font1">有没有</span>
+			<span class="font2">goto?&nbsp;</span>
+		</h2>
+		<p>　　
+			<span class="color">
+				<strong>java<span class="font1">中的保留字，现在没有在</span>
+			<span class="font2">java</span>
+			<span class="font1">中使用。</span>
+			</strong>
+			</span>
+		</p>
+		<h2 class="title2">3
+			<span class="font1">、说说</span>
+			<span class="font2">&amp;</span>
+			<span class="font1">和</span>
+			<span class="font2">&amp;&amp;</span>
+			<span class="font1">的区别。&nbsp;</span>
+		</h2>
+		<p class="main">　　
+			<span class="color">
+				<strong>&amp;<span class="font1">和</span>
+			<span class="font2">&amp;&amp;</span>
+			<span class="font1">都可以用作逻辑与的运算符，表示逻辑与（</span>
+			<span class="font2">and</span>
+			<span class="font1">），当运算符两边的表达式的结果都为</span>
+			<span class="font2">true</span>
+			<span class="font1">时，整个运算结果才为</span>
+			<span class="font2">true</span>
+			<span class="font1">，否则，只要有一方为</span>
+			<span class="font2">false</span>
+			<span class="font1">，则结果为</span>
+			<span class="font2">false</span>
+			<span class="font1">。</span>
+				</strong>
+			</span>
+		</p>
+		<p class="main">　　
+			<span class="color">
+				<strong>&amp;&amp;<span class="font1">还具有短路的功能，即如果第一个表达式为</span>
+					<span class="font2">false</span>
+					<span class="font1">，则不再计算第二个表达式。</span>
+				</strong>
+			</span>
+			<span class="font1">例如，对于</span>
+			<span class="font2">if(str&nbsp;!=&nbsp;null&nbsp;&amp;&amp;&nbsp;!str.equals(</span>
+			<span class="font2">&ldquo;&rdquo;))</span>
+			<span class="font1">表达式，当</span>
+			<span class="font2">str</span>
+			<span class="font1">为</span>
+			<span class="font2">null</span>
+			<span class="font1">时，后面的表达式不会执行，所以不会出现</span>
+			<span class="font2">NullPointerException</span>
+			<span class="font1">如果将</span>
+			<span class="font2">&amp;&amp;</span>
+			<span class="font1">改为</span>
+			<span class="font2">&amp;</span>
+			<span class="font1">，则会抛出</span>
+			<span class="font2">NullPointerException</span>
+			<span class="font1">异常。</span>
+			<span class="font2">If(x==33&nbsp;&amp;&nbsp;++y&gt;0)&nbsp;y</span>
+			<span class="font1">会增长，</span>
+			<span class="font2">If(x==33&nbsp;&amp;&amp;&nbsp;++y&gt;0)</span>
+			<span class="font1">不会增长</span>
+		</p>
+		<p class="main">　　
+			<span class="color">
+				<strong>&amp;<span class="font1">还可以用作位运算符，当</span>
+					<span class="font2">&amp;</span>
+					<span class="font1">操作符两边的表达式不是</span>
+					<span class="font2">boolean</span>
+					<span class="font1">类型时，</span>
+					<span class="font2">&amp;</span>
+					<span class="font1">表示按位与操作</span>
+				</strong>
+			</span>
+			<span class="font1">，我们通常使用</span>
+			<span class="font2">0x0f</span>
+			<span class="font1">来与一个整数进行</span>
+			<span class="font2">&amp;</span>
+			<span class="font1">运算，来获取该整数的最低</span>
+			<span class="font2">4</span>
+			<span class="font1">个</span>
+			<span class="font2">bit</span>
+			<span class="font1">位，例如，</span>
+			<span class="font2">0x31&nbsp;&amp;&nbsp;0x0f</span>
+			<span class="font1">的结果为</span>
+			<span class="font2">0x01</span>
+			<span class="font1">。&nbsp;</span>
+		</p>
+	</body>
+
+</html>

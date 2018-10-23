@@ -1,0 +1,31 @@
+.font1 {
+	font-family: 宋体;
+}
+
+.font2 {
+	font-family: Times New Roman;
+}
+
+.color {
+	color: #ff0000;
+}
+
+.title {
+	font-size: 32px;
+	text-align: center;
+}
+
+.title1 {
+	color: #28A48C;
+	font-size: 24px;
+	text-align: left;
+}
+
+.title2 {
+	font-size: 20px;
+	text-align: left;
+}
+
+.main {
+	font-size: 18px;
+}

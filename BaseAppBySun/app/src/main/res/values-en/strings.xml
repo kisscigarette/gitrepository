@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">BaseAppBySun</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="str_get_verify">get V</string>
+    <string name="str_login_no_space">Login</string>
+    <string name="str_register_no_space">REGISTER</string>
+    <string name="str_find_pass">RESET PASSWARD</string>
+
+    <!--personFragment-->
+
+    <string name="str_quit_account">Quit current account</string>
+    <string name="str_fre_questions">Frequently Asked Questions</string>
+    <string name="str_about">About</string>
+
+</resources>

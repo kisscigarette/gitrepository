@@ -167,4 +167,6 @@ public class LoginResult extends BaseResult {
             this.allowSetBlekey = allowSetBlekey;
         }
     }
+
+
 }

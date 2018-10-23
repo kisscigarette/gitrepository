@@ -65,6 +65,26 @@
 -dontwarn com.alibaba.fastjson.**
 -keep class com.alibaba.fastjson.** { *; }
 
+################RxLifeCycle#################
+-keep class com.trello.rxlifecycle2.** { *; }
+-keep interface com.trello.rxlifecycle2.** { *; }
+
+# Glide
+-keep public class * implements com.bumptech.glide.module.GlideModule
+-keep public enum com.bumptech.glide.load.resource.bitmap.ImageHeaderParser$** {
+    **[] $VALUES;
+    public *;
+}
+
+#SweetAlertDialog
+-keep class cn.pedant.SweetAlert.Rotate3dAnimation {
+  public <init>(...);
+}
+
+#银联支付
+-dontwarn com.unionpay.**
+-keep class com.unionpay.** { *; }
+
 
 #-------------------------------------------------------------------------
 
@@ -80,7 +100,7 @@
 #----------------------------------------------------------------------------
 #---------------------------------------------------------------------------------------------------
 
-#-------------------------------------------基本不用动区域--------------------------------------------
+#-------------------------------------------基本不用动区域-------------------------------------------
 #---------------------------------基本指令区----------------------------------
 -optimizationpasses 5
 -dontusemixedcaseclassnames
@@ -136,15 +156,17 @@
     java.lang.Object writeReplace();
     java.lang.Object readResolve();
 }
--keep class **.R$* {
- *;
-}
+# 保留R下面的资源
+-keep class **.R$* {*;}
+# 对于带有回调函数的onXXEvent、**On*Listener的，不能被混淆
 -keepclassmembers class * {
     void *(**On*Event);
+    void *(**On*Listener);
 }
 #----------------------------------------------------------------------------
 
 #---------------------------------webview------------------------------------
+#------------------与js交互的JavascriptInterface接口的类
 -keepclassmembers class fqcn.of.javascript.interface.for.Webview {
    public *;
 }

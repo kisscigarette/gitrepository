@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <slide
+        android:duration="800"
+        android:interpolator="@android:interpolator/fast_out_slow_in"
+        android:slideEdge="start">
+        <targets>
+            <target android:excludeId="@id/home_bottom_container" />
+            <target android:excludeId="@android:id/navigationBarBackground" />
+            <target android:excludeId="@android:id/statusBarBackground" />
+        </targets>
+    </slide>
+    <slide
+        android:duration="800"
+        android:interpolator="@android:interpolator/fast_out_slow_in"
+        android:slideEdge="bottom">
+        <targets>
+            <target android:targetId="@id/home_bottom_container"/>
+        </targets>
+    </slide>
+</transitionSet>
